@@ -10,13 +10,13 @@ public class PostfixMain22 {
         System.out.println("Masukkan ekspresi matematika (infix): ");
         Q = sc.nextLine();
         Q = Q.trim();
-        Q = Q + ")";
+        Q = Q + ")"; // Menambahkan ')' sebagai penanda akhir ekspresi
 
         int total = Q.length();
 
         Postfix22 post = new Postfix22(total);
         P = post.konversi(Q);
         System.out.println("Postfix: " + P);
-    sc.close();
+        sc.close();
     }
 }
